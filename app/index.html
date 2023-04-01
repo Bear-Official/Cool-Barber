@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cool Barber | Landing</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.min.css">
+    <link rel="stylesheet" href="src/slick-1.8.1/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Montserrat&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xxl: { max: "1400px" },
+
+                    xl: { max: "1279px" },
+
+                    xll: { max: "1070px" },
+
+                    laptop: { max: "992px" },
+
+                    lg: { max: "1023px" },
+
+                    md: { max: "767px" },
+
+                    sm: { max: "639px" },
+                },
+                fontFamily: {
+                    "playfair": ["Playfair Display", "sans-serif"],
+                    'montserrat': ['Montserrat', 'sans-serif'],
+                    'firasans': ['Fira sans', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        primary: '#3B322D'
+                    },
+
+                    fontSize: {
+                        li: "0.9375rem"
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#3B322D] text-white">
+    <header class="py-[2.25rem] text-[#EFE7E2] xll:text-[.9375rem] ">
+        <div class="wrapper">
+            <div class="flex justify-between items-center ">
+                <a class="flex items-center" href="#">
+                    <img class="animate-spin" src="images/flower.svg" alt="">
+                    <span class="ml-[1.0625rem] font-bold  uppercase">Cool Barber</span>
+                </a>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="laptop:block cursor-pointer hidden z-50 ">
+                    <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path class="line line1" d="M0 3h20v2H0V3z" />
+                        <path class="line line2" d="M0 9h20v2H0V9z" />
+                        <path class="line line3" d="M0 15h20v2H0v-2z" />
+                    </svg>
+                </label>
+                <ul class="flex text-center items-center text-li gap-9 xll:gap-4 laptop:hidden laptop:text-center"
+                    id="menu">
+                    <li><a class="hover:text-orange-400  transition-all ease duration-500" href="#">About
+                            Us</a>
+                    </li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500" href="#">Our
+                            masters</a></li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500 "
+                            href="portfolio.html">Portfolio</a></li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500" href="#">Testimonials</a>
+                    </li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500" class=""
+                            href="contacts.html">Contacts</a>
+                    </li>
+                    <div class="flex items-center text-sm">
+                        <span class="block text-right laptop:text-center laptop:text-lg"> 302 W 50th St, <br> NY, NY
+                            10019</span>
+                        <div
+                            class="flex  items-center justify-center laptop:hidden rounded-full xll:w-8 xll:h-8 w-9 h-9 bg-[#FF6E40] ml-[.9375rem]">
+                            <img src="images/place.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mb-1">
+                            <a class="block laptop:mb-5 text-white text-lg xll:text-sm" href="tel:8 (800) 000-00-00">8
+                                (800)
+                                000-00-00</a>
+                            <span class="block text-right text-sm laptop:text-center">Daily from 9 to 20</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center laptop:hidden rounded-full xll:w-8 xll:h-8 w-9 h-9 bg-[#FF6E40] ml-[.9375rem]">
+                            <img src="images/phone.svg" alt="">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="h-full z-10 relative font-playfair">
+            <div class="wrapper">
+                <div class="relative">
+                    <img src="images/hero-img.jpg" alt="">
+                    <div
+                        class="flex items-center justify-around absolute left-0 right-24 top-[2.5rem] lg:flex-col lg:text-center lg:right-0 sm:static">
+                        <h1 class="text-[4.375rem]  font-black leading-[5rem] lg:mb-5 md:text-4xl sm:mt-5">Men’s
+                            Barbershop <br> in The Middle East
+                        </h1>
+                        <div class="flex items-center flex-col">
+                            <button
+                                class="w-[13.8125rem] h-[40px] mr-auto lg:m-0  block py-2 px-[1.5625rem] transition ease-in duration-300 hover:bg-white hover:text-orange-500 border border-[#EFE7E2] mb-7">THE
+                                HIGHEST RATED</button>
+                            <p class="text-lg text-[#EFE7E2] font-firasans lg:mt-5">Text that is placed
+                                at the bottom <br>
+                                of the heading to reveal details</p>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-[#FF6E40] block text-white w-[12.125rem] sm:mb-10 h-[4.25rem] absolute sm:static sm:mx-auto sm:mt-5 left-14 bottom-[3.75rem] font-bold hover:bg-orange-500 hover:text-black ease-in duration-300">Book
+                        now
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#251D1A] pt-[20.50rem] pb-[7.5rem] relative -top-[12.5rem] z-0 sm:-top-60">
+            <div class="wrapper">
+                <div
+                    class="flex flex-wrap justify-between items-center lg:grid lg:grid-cols-2 lg:gap-5 sm:flex-col sm:flex">
+                    <div class="flex flex-col items-center">
+                        <img src="images/feature-1.svg" alt="">
+                        <span class="block mb-[.625rem] mt-[1.5rem] font-semibold text-2xl">Briefly describe the
+                            benefit</span>
+                        <span class="block text-center text-[1rem] text-[#B7AAA2]">Long text, in two lines, for clarity
+                            <br> and detail</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/feature-2.svg" alt="">
+                        <span class="block mb-[.625rem] mt-[1.5rem] font-semibold text-2xl">Briefly describe the
+                            benefit</span>
+                        <span class="block text-center text-[1rem] text-[#B7AAA2]">Long text, in two lines, for clarity
+                            <br> and
+                            detail</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/feature-3.svg" alt="">
+                        <span class="block mb-[.625rem] mt-[1.5rem] font-semibold text-2xl">Briefly describe the
+                            benefit</span>
+                        <span class="block text-center text-[1rem] text-[#B7AAA2]">Long text, in two lines, for clarity
+                            <br> and
+                            detail</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[7.5rem]">
+            <div class="wrapper p-0">
+                <div class="m-auto text-center mb-[3.75rem]">
+                    <h2 class="font-bold text-5xl mb-3">About Us</h2>
+                    <p class="text-[#EFE7E2]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit <br>
+                        officia
+                        consequat duis enim velit
+                        mollit. Exercitation veniam consequat sunt nostrud <br> amet. Amet minim mollit non deserunt
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-between xl:gap-5 mb-[3.75rem] xl:grid xl:grid-cols-2">
+                    <img class="mb-5 xl:w-full  xl:h-full xl:object-cover" src="images/about-1.png" alt="">
+                    <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-2.png" alt="">
+                    <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-3.png" alt="">
+                    <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-4.png" alt="">
+                    <img class="xl:w-full laptop:h-full laptop:object-cover" class="xl:hidden" src="images/about-5.png"
+                        alt="">
+                    <img class="xl:w -full laptop:h-full laptop:object-cover" class="mt-5 xl:hidden w-[17.5rem]"
+                        src="images/about-6.png" alt="">
+                </div>
+            </div>
+            <div class="flex items-center justify-center md:flex-col">
+                <button
+                    class="max-w-[27rem] h-[4.25rem] font-playfair md:min-w-full md:m-0 md:mb-3 bg-[#FF6E40] font-bold text-white py-[1.125rem] px-[3.1875rem] mr-[1.875rem]  hover:bg-orange-500 ease-in duration-500 hover:text-black">Our
+                    masters and their masterpieces</button>
+                <button
+                    class="max-w-[13.5rem] h-[4.25rem] font-playfair md:min-w-full uppercase font-bold border border-white py-[1.4688rem] px-[2.5rem] hover:text-orange-500 hover:border-orange-500 ease-in duration-300">Our
+                    Instagram</button>
+            </div>
+            </div>
+        </section>
+        <section class="pb-[7.0625rem] overflow-hidden">
+            <div class="wrapper relative">
+                <div class="mx-auto text-center mb-[3.75rem]">
+                    <h3 class="font-bold text-5xl mb-6">Testimonials</h3>
+                    <p class="text-[#EFE7E2] text-[15px]">Подзаголовок, который раскрывает подробности <br> заголовка и
+                        призывает сделать целевое действие</p>
+                </div>
+                <button class="slick-prev slick-arrow xxl:left-5" aria-label="Previous" type="button"></button>
+                <button class="slick-next slick-arrow xxl:right-5" aria-label="Previous" type="button"></button>
+                <div class="slider">
+                    <div class="ml-5">
+                        <img src="images/testimonials-1.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Darrell Steward</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-2.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Marvin McKinney</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting
+                            <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-3.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Ronald Richards</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting
+                            <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-4.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Cody Fisher</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting
+                            <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-1.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Darrell Steward</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-3.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Darrell Steward</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-2.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Darrell Steward</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                    <div class="ml-5">
+                        <img src="images/testimonials-4.png" alt="">
+                        <span class=" block py-[1.5rem] font-bold text-sm">Marvin McKinney</span>
+                        <p class="mb-[1.5rem] text-[1rem]"> Describe the feedback or end result <br> the person received
+                            after interacting
+                            <br>
+                            with you. What exactly did it give him. <br> You
+                            can describe the result in <br> numbers to be specific.
+                        </p>
+                        <a class="block text-sm hover:text-black transtion duration-300 text-orange-600" href="#">Read
+                            full testimonial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[15rem] pt-[7.5rem] bg-[#251D1A]">
+            <div class="wrapper">
+                <div class="m-auto text-center mb-[3.8988rem]">
+                    <h4 class="font-bold text-5xl mb-6">Our Price</h4>
+                    <span class="block text-[#EFE7E2] text-[.9375rem]">Subheading that reveals the details of the title
+                        and calls for the targeted action</span>
+                </div>
+                <div class="flex justify-between flex-wrap items-center lg:gap-8 sm:flex-col sm:text-center">
+                    <div class="lg:w-[47%]  sm:w-full ">
+                        <img class="lg:w-full" src="images/man-1.png" alt="">
+                        <span class="block text-3xl my-5">Haircuts</span>
+                        <div class=" border-r-2  border-[#B7AAA2] pr-2">
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Regular Haircut</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$20</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Shave</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$19</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$30</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$22</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Hair Tatoo</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$45</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Facial</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-[47%] sm:w-full">
+                        <img class="lg:w-full" src="images/man-2.png" alt="">
+                        <span class="block text-3xl my-5">Beard & Mo</span>
+                        <div class=" border-r-2  border-[#B7AAA2] pr-2">
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Regular Haircut</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$20</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Shave</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$19</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$30</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$22</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Hair Tatoo</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$45</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Facial</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-[47%] sm:w-full">
+                        <img class="lg:w-full" src="images/man-3.png" alt="">
+                        <span class="block text-3xl my-5">Shaving</span>
+                        <div class=" border-r-2  border-[#B7AAA2] pr-2">
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Regular Haircut</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$20</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Shave</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$19</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$30</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$22</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Hair Tatoo</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$45</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Facial</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$15</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lg:w-[47%] sm:w-full">
+                        <img class="lg:w-full" src="images/man-4.png" alt="">
+                        <span class="block text-3xl my-5">Waxing</span>
+                        <div class=" border-r-2  border-[#B7AAA2] pr-2">
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Regular Haircut</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$20</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Shave</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$19</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Haircut + Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$30</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Beard Trim</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$22</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Hair Tatoo</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$45</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between mb-[.625rem]">
+                                <span class="text-[#EFE7E2] block">Facial</span>
+                                <div class="flex items-center">
+                                    <span class="text-[#B7AAA2] text-sm block mr-2">60 min</span>
+                                    <span class="block text-[1rem]">$15</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-[7.5rem] relative -top-[15rem] overflow-hidden">
+            <div class="wrapper">
+                <div class="mx-auto text-center bg-[#FF6E40] py-[4.375rem] px-[9.375rem] md:pl-1 md:pr-1">
+                    <h5 class="text-black font-black text-4xl mb-3 sm:text-3xl">Get in consultation with our expert
+                        barbers</h5>
+                    <span class="block text-[#3B322D] text-xl mb-[2.1875rem]">Expand Call-to-Action Details</span>
+                    <div class="mb-6">
+                        <form class="flex items-center justify-between xl:flex-wrap sm:flex-col">
+                            <input
+                                class="text-white bg-transparent text-sm w-80 h-[4.25rem] xl:w-[49%] sm:w-full sm:mb-4 border-2 border-black p-5 placeholder-white focus:bg-orange-600 transition-all duration-500"
+                                type="tel" placeholder="+1 (___) ___-__-__">
+                            <input
+                                class="text-white bg-transparent text-sm w-80 h-[4.25rem] xl:w-1/2 sm:w-full sm:mb-4  border-black border-2 p-5 placeholder-white focus:bg-orange-600  transition-all duration-500"
+                                type="tel" placeholder="Email">
+                            <button
+                                class="w-[194px] h-[4.25rem] font-playfair xl:mt-4 sm:mt-0 xl:m-auto xl:w-full bg-black font-bold hover:bg-orange-600 transition-all duration-500 hover:text-black"
+                                type="submit">Book now</button>
+                        </form>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 sm:flex-col">
+                        <input
+                            class="accent-black sm:order-1 w-3 h-3 appearance-none bg-transparent relative border-black border-2 cursor-pointer checked:bg-black checked:before:content-['✔'] before:text-[.5rem] before:absolute before:-top- before:left-px "
+                            type="checkbox" name="" id="">
+                        <span class="block">By clicking on the button, you agree to the <span
+                                class="underline underline-offset-1 hover:cursor-pointer">terms of processing
+                                personal data</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overflow-hidden font-montserrat font-normal relative">
+            <div class="max-w-max mx-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5593.28760334692!2d-73.5636362217602!3d45.4971171987324!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1680093099629!5m2!1sen!2s"
+                    width="1920" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="wrapper">
+                <div
+                    class="max-w-[30rem] h-[33.125rem] sm:pr-5 sm:pl-5 sm:w-[96%] py-20 pl-14 pr-9 bg-[#251D1A] rounded-[.25rem] absolute top-[3.75rem] ">
+                    <h6 class="font-bold mb-[2.125rem] text-5xl sm:text-4xl">Contacts</h6>
+                    <div class="flex items-center  mb-6">
+                        <div
+                            class="rounded-full  w-[3.375rem] h-[3.375rem]  flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/phone.svg" alt="">
+                        </div>
+                        <a class="block text-xl sm:text-sm" href="tel:8 (800) 000-00-00">8 (800) 000-00-00</a>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="rounded-full w-[3.375rem] h-[3.375rem]  flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/email.svg" alt="">
+                        </div>
+                        <a class="block text-xl sm:text-sm" href="mailto:info@sitename.com">info@sitename.com</a>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="rounded-full w-[3.375rem] h-[3.375rem]    flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/place.svg" alt="">
+                        </div>
+                        <span class="block text-xl sm:text-sm">302 W 50th St, NY, NY 10019</span>
+                    </div>
+                    <div class="flex items-center  mb-6">
+                        <div
+                            class="rounded-full w-[3.375rem] h-[3.375rem]   flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/clock.svg" alt="">
+                        </div>
+                        <span class="block text-xl sm:text-sm">Daily from 9 to 20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="font-montserrat py-14 bg-[#251D1A]">
+        <span class="block text-center text-[.75rem]">© All rights reserved</span>
+    </footer>
+
+    <script type="text/javascript" src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="src/main.min.js"></script>
+</body>
+
+</html>

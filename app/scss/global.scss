@@ -1,0 +1,29 @@
+// Settings
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "media";
+@import "slider";
+
+// Components
+@import "header";
+@import "footer";
+
+// Pages
+@import "index";
+
+html,
+body {
+    height: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+ 
+

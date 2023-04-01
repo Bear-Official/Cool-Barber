@@ -1,0 +1,59 @@
+.slick-prev {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: #b7aaa2 !important;
+    border-radius: 50%;
+    left: -50px;
+    top: 45%;
+    z-index: 9999;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: #ff6e40 !important;
+    }
+
+    &::after {
+        position: relative;
+        display: block;
+        margin: auto;
+        content: "";
+        background-size: cover;
+        background-image: url(../images/arrow-left.png);
+        background-repeat: no-repeat;
+        margin: auto;
+        width: 11px;
+        height: 19px;
+        z-index: 999;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: #b7aaa2 !important;
+    border-radius: 50%;
+    right: -50px;
+    z-index: 9999;
+    top: 45%;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: #ff6e40 !important;
+    }
+
+    &::after {
+        position: relative;
+        display: block;
+        margin: auto;
+        content: "";
+        background-image: url(../images/arrow-left.png);
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 11px;
+        height: 19px;
+        z-index: 999;
+    }
+}

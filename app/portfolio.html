@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cool Barber | Landing</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.min.css">
+    <link rel="stylesheet" href="src/slick-1.8.1/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Montserrat&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xxl: { max: "1400px" },
+
+                    xl: { max: "1279px" },
+
+                    xll: { max: "1070px" },
+
+                    laptop: { max: "992px" },
+
+                    lg: { max: "1023px" },
+
+                    md: { max: "767px" },
+
+                    sm: { max: "639px" },
+                },
+                fontFamily: {
+                    "playfair": ["Playfair Display", "sans-serif"],
+                    'montserrat': ['Montserrat', 'sans-serif'],
+                    'firasans': ['Fira sans', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        primary: '#3B322D'
+                    },
+
+                    fontSize: {
+                        li: "0.9375rem"
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#3B322D] text-white">
+    <header class="py-[2.25rem] text-[#EFE7E2] xll:text-[.9375rem] ">
+        <div class="wrapper">
+            <div class="flex justify-between items-center ">
+                <a class="flex items-center" href="index.html">
+                    <img class="animate-spin" src="images/flower.svg" alt="">
+                    <span class="ml-[1.0625rem] font-bold  uppercase">Cool Barber</span>
+                </a>
+                <input type="checkbox" id="menu-toggle" class="hidden">
+                <label for="menu-toggle" class="laptop:block cursor-pointer hidden z-50 ">
+                    <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path class="line line1" d="M0 3h20v2H0V3z" />
+                        <path class="line line2" d="M0 9h20v2H0V9z" />
+                        <path class="line line3" d="M0 15h20v2H0v-2z" />
+                    </svg>
+                </label>
+                <ul class="flex text-center items-center text-li gap-9 xll:gap-4 laptop:hidden laptop:text-center"
+                    id="menu">
+                    <li><a class="hover:text-orange-400  transition-all ease duration-500" href="#">About
+                            Us</a>
+                    </li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500" href="#">Our
+                            masters</a></li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500 "
+                            href="portfolio.html">Portfolio</a></li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500" href="#">Testimonials</a>
+                    </li>
+                    <li><a class="hover:text-orange-400 transition-all ease duration-500" class=""
+                            href="contacts.html">Contacts</a>
+                    </li>
+                    <div class="flex items-center text-sm">
+                        <span class="block text-right laptop:text-center laptop:text-lg"> 302 W 50th St, <br> NY, NY
+                            10019</span>
+                        <div
+                            class="flex  items-center justify-center laptop:hidden rounded-full xll:w-8 xll:h-8 w-9 h-9 bg-[#FF6E40] ml-[.9375rem]">
+                            <img src="images/place.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mb-1">
+                            <a class="block laptop:mb-5 text-white text-lg xll:text-sm" href="tel:8 (800) 000-00-00">8
+                                (800)
+                                000-00-00</a>
+                            <span class="block text-right text-sm laptop:text-center">Daily from 9 to 20</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-center laptop:hidden rounded-full xll:w-8 xll:h-8 w-9 h-9 bg-[#FF6E40] ml-[.9375rem]">
+                            <img src="images/phone.svg" alt="">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="z-10 relative pb-[5.625rem] font-playfair">
+            <div class="wrapper p-0">
+                <img class="md:object-cover md:h-[100vh]" src="images/hero-2.jpg" alt="">
+                <div class="absolute top-10 pl-12 lg:text-center lg:left-0 lg:right-0 md:p-0 sm:top-52">
+                    <p class=" font-black text-7xl mb-8 lg:text-5xl sm:text-4xl">Our craftsmen make <br> visitors
+                        beautiful <br> and happier
+                    </p>
+                    <p class="text-lg font-normal">
+                        Text placed at the bottom <br> of the title to reveal details
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="pb-5">
+            <div class="wrapper p-0">
+                <div
+                    class="flex items-center justify-between bg-[#251D1A] pr-4 laptop:grid laptop:grid-cols-3 sm:text-center">
+                    <img src="images/man-5.png" alt="">
+                    <span class="block font-bold text-5xl leading-[3.75rem] sm:text-xs">Devon <br> Lane</span>
+                    <p class="text-lg text-[#B7AAA2] sm:text-xs">
+                        Description of the master, his <br> education, achievements and <br> merits
+                    </p>
+                    <p class="text-lg text-[#B7AAA2] laptop:hidden">
+                        Description of the styles and <br> specializations of the master
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[5.625rem]">
+            <div class="wrapper p-0">
+                <div class="grid grid-cols-4 gap-5 mb-8  md:grid-cols-3 sm:grid-cols-2">
+                    <img src="images/cutter-1.png" alt="">
+                    <img src="images/cutter-2.png" alt="">
+                    <img src="images/cutter-3.png" alt="">
+                    <img src="images/cutter-4.png" alt="">
+                    <img src="images/cutter-5.png" alt="">
+                    <img src="images/cutter-6.png" alt="">
+                    <img src="images/cutter-7.png" alt="">
+                    <img src="images/cutter-8.png" alt="">
+                </div>
+                <a class="w-64 h-16 py-4 px-[3.1875rem]  bg-[#FF6E40] flex items-center justify-between text-xl mx-auto text-white cursor-pointer"
+                    href="masters.html">
+                    <img class="animate-spin" src="images/refresh.svg" alt="">
+                    See all works
+                </a>
+            </div>
+        </section>
+        <section class="pb-5">
+            <div class="wrapper p-0">
+                <div
+                    class="flex items-center justify-between bg-[#251D1A] pr-4 laptop:grid laptop:grid-cols-3 sm:text-center">
+                    <img src="images/man-6.png" alt="">
+                    <span class="block font-bold text-5xl leading-[3.75rem] sm:text-xs">Ronald <br> Richards </span>
+                    <p class="text-lg text-[#B7AAA2] sm:text-xs">
+                        Description of the master, his <br> education, achievements and <br> merits
+                    </p>
+                    <p class="text-lg text-[#B7AAA2] laptop:hidden">
+                        Description of the styles and <br> specializations of the master
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[5.625rem]">
+            <div class="wrapper p-0">
+                <div class="grid grid-cols-4 gap-5 mb-8 md:grid-cols-3 sm:grid-cols-2">
+                    <img src="images/cutter-9.png" alt="">
+                    <img src="images/cutter-10.png" alt="">
+                    <img src="images/cutter-11.png" alt="">
+                    <img src="images/cutter-12.png" alt="">
+                    <img src="images/cutter-13.png" alt="">
+                    <img src="images/cutter-14.png" alt="">
+                    <img src="images/cutter-15.png" alt="">
+                    <img src="images/cutter-16.png" alt="">
+                </div>
+                <a class="w-64 h-16 py-4 px-[3.1875rem] bg-[#FF6E40] flex items-center justify-between text-xl mx-auto text-white cursor-pointer"
+                    href="masters-2.html">
+                    <img class="animate-spin" src="images/refresh.svg" alt="">
+                    See all works
+                </a>
+            </div>
+        </section>
+        <section class="pb-5">
+            <div class="wrapper p-0">
+                <div
+                    class="flex items-center justify-between bg-[#251D1A] pr-4 laptop:grid laptop:grid-cols-3 sm:text-center">
+                    <img src="images/man-7.png" alt="">
+                    <span class="block font-bold text-5xl leading-[3.75rem] sm:text-xs">Jane <br> Cooper</span>
+                    <p class="text-lg text-[#B7AAA2] sm:text-xs">
+                        Description of the master, his <br> education, achievements and <br> merits
+                    </p>
+                    <p class="text-lg text-[#B7AAA2] laptop:hidden">
+                        Description of the styles and <br> specializations of the master
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="pb-[5.625rem]">
+            <div class="wrapper p-0">
+                <div class="grid grid-cols-4 gap-5 mb-8 md:grid-cols-3 sm:grid-cols-2">
+                    <img src="images/cutter-17.png" alt="">
+                    <img src="images/cutter-18.png" alt="">
+                    <img src="images/cutter-19.png" alt="">
+                    <img src="images/cutter-20.png" alt="">
+                    <img src="images/cutter-21.png" alt="">
+                    <img src="images/cutter-22.png" alt="">
+                    <img src="images/cutter-23.png" alt="">
+                    <img src="images/cutter-24.png" alt="">
+                </div>
+
+                <a class="w-64 h-16 py-4 px-[3.1875rem] bg-[#FF6E40] flex items-center justify-between text-xl mx-auto text-white cursor-pointer"
+                    href="masters-3.html">
+                    <img class="animate-spin" src="images/refresh.svg" alt="">
+                    See all works
+                </a>
+            </div>
+        </section>
+        <section class="pb-[7.5rem]">
+            <div class="wrapper p-0">
+                <div class="mx-auto text-center bg-[#FF6E40] py-[4.375rem] px-[9.375rem] md:pl-1 md:pr-1">
+                    <h5 class="text-black font-black text-4xl mb-3 sm:text-3xl">Get in consultation with our expert
+                        barbers</h5>
+                    <span class="block text-[#3B322D] text-xl mb-[2.1875rem]">Expand Call-to-Action Details</span>
+                    <div class="mb-6">
+                        <form class="flex items-center justify-between xl:flex-wrap sm:flex-col">
+                            <input
+                                class="text-white bg-transparent text-sm w-80 h-[4.25rem] xl:w-[49%] sm:w-full sm:mb-4 border-2 border-black p-5 placeholder-white focus:bg-orange-600 transition-all duration-500"
+                                type="tel" placeholder="+1 (___) ___-__-__">
+                            <input
+                                class="text-white bg-transparent text-sm w-80 h-[4.25rem] xl:w-1/2 sm:w-full sm:mb-4  border-black border-2 p-5 placeholder-white focus:bg-orange-600  transition-all duration-500"
+                                type="tel" placeholder="Email">
+                            <button
+                                class="w-[194px] h-[4.25rem] font-playfair xl:mt-4 sm:mt-0 xl:m-auto xl:w-full bg-black font-bold hover:bg-orange-600 transition-all duration-500 hover:text-black"
+                                type="submit">Book now</button>
+                        </form>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 sm:flex-col">
+                        <input
+                            class="accent-black sm:order-1 w-3 h-3 appearance-none bg-transparent relative border-black border-2 cursor-pointer checked:bg-black checked:before:content-['✔'] before:text-[.5rem] before:absolute before:-top- before:left-px "
+                            type="checkbox" name="" id="">
+                        <span class="block">By clicking on the button, you agree to the <span
+                                class="underline underline-offset-1 hover:cursor-pointer">terms of processing
+                                personal data</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overflow-hidden font-montserrat font-normal relative">
+            <div class="max-w-max mx-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5593.28760334692!2d-73.5636362217602!3d45.4971171987324!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1680093099629!5m2!1sen!2s"
+                    width="1920" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="wrapper">
+                <div
+                    class="max-w-[30rem] h-[33.125rem] sm:pr-5 sm:pl-5 sm:w-[96%] py-20 pl-14 pr-9 bg-[#251D1A] rounded-[.25rem] absolute top-[3.75rem] ">
+                    <h6 class="font-bold mb-[2.125rem] text-5xl sm:text-4xl">Contacts</h6>
+                    <div class="flex items-center  mb-6">
+                        <div
+                            class="rounded-full  w-[3.375rem] h-[3.375rem]  flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/phone.svg" alt="">
+                        </div>
+                        <a class="block text-xl sm:text-sm" href="tel:8 (800) 000-00-00">8 (800) 000-00-00</a>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="rounded-full w-[3.375rem] h-[3.375rem]  flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/email.svg" alt="">
+                        </div>
+                        <a class="block text-xl sm:text-sm" href="mailto:info@sitename.com">info@sitename.com</a>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="rounded-full w-[3.375rem] h-[3.375rem]    flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/place.svg" alt="">
+                        </div>
+                        <span class="block text-xl sm:text-sm">302 W 50th St, NY, NY 10019</span>
+                    </div>
+                    <div class="flex items-center  mb-6">
+                        <div
+                            class="rounded-full w-[3.375rem] h-[3.375rem]   flex items-center justify-center  bg-[#FF6E40] mr-8">
+                            <img src="images/clock.svg" alt="">
+                        </div>
+                        <span class="block text-xl sm:text-sm">Daily from 9 to 20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer py-14 bg-[#251D1A] font-montserrat">
+        <span class="block text-center text-[.75rem]">© All rights reserved</span>
+    </footer>
+
+    <script type="text/javascript" src="src/jquery-3.6.0.min.js"></script>
+    <script src="src/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="src/main.min.js"></script>
+</body>
