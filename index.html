@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.min.css">
+    <link rel="stylesheet" href="src/lightgallery.css" />
     <link rel="stylesheet" href="src/slick-1.8.1/slick/slick.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +39,10 @@
                     'montserrat': ['Montserrat', 'sans-serif'],
                     'firasans': ['Fira sans', 'sans-serif'],
                 },
+
+                display: {
+                    inherit: 'inherit',
+                },
                 extend: {
                     color: {
                         primary: '#3B322D'
@@ -47,13 +52,16 @@
                         li: "0.9375rem"
                     },
                 }
+
+
             }
         }
     </script>
+
 </head>
 
 <body class="bg-[#3B322D] text-white">
-    <header class="py-[2.25rem] text-[#EFE7E2] xll:text-[.9375rem] ">
+    <header class="py-[2.25rem] text-[#EFE7E2] xll:text-[.9375rem]">
         <div class="wrapper">
             <div class="flex justify-between items-center ">
                 <a class="flex items-center" href="#">
@@ -106,6 +114,8 @@
             </div>
         </div>
     </header>
+
+
     <main>
         <section class="h-full z-10 relative font-playfair">
             <div class="wrapper">
@@ -173,15 +183,27 @@
                         mollit. Exercitation veniam consequat sunt nostrud <br> amet. Amet minim mollit non deserunt
                     </p>
                 </div>
-                <div class="flex flex-wrap justify-between xl:gap-5 mb-[3.75rem] xl:grid xl:grid-cols-2">
-                    <img class="mb-5 xl:w-full  xl:h-full xl:object-cover" src="images/about-1.png" alt="">
-                    <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-2.png" alt="">
-                    <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-3.png" alt="">
-                    <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-4.png" alt="">
-                    <img class="xl:w-full laptop:h-full laptop:object-cover" class="xl:hidden" src="images/about-5.png"
-                        alt="">
-                    <img class="xl:w -full laptop:h-full laptop:object-cover" class="mt-5 xl:hidden w-[17.5rem]"
-                        src="images/about-6.png" alt="">
+                <div class="flex flex-wrap justify-between mb-[3.75rem] xl:grid xl:grid-cols-2 gap-5" id="lightgallery">
+                    <a href="images/about-1.png">
+                        <img class="mb-5 xl:w-full  xl:h-full xl:object-cover" src="images/about-1.png" alt="">
+                    </a>
+                    <a class="inherit" href="images/about-2.png">
+                        <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-2.png" alt="">
+                    </a>
+                    <a class="inherit" href="images/about-3.png">
+                        <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-3.png" alt="">
+                    </a>
+                    <a href="images/about-4.png">
+                        <img class="xl:w-full laptop:h-full laptop:object-cover" src="images/about-4.png" alt="">
+                    </a>
+                    <a href="images/about-5.png">
+                        <img class="xl:w-full laptop:h-full laptop:object-cover" class="xl:hidden"
+                            src="images/about-5.png" alt="">
+                    </a>
+                    <a href="images/about-6.png">
+                        <img class="xl:w -full laptop:h-full laptop:object-cover" class="mt-5 xl:hidden w-[17.5rem]"
+                            src="images/about-6.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="flex items-center justify-center md:flex-col md:p-3">
@@ -191,7 +213,6 @@
                 <button
                     class="max-w-[13.5rem] h-[4.25rem] font-playfair md:min-w-full uppercase font-bold border border-white py-[1.4688rem] px-[2.5rem] hover:text-orange-500 hover:border-orange-500 ease-in duration-300">Our
                     Instagram</button>
-            </div>
             </div>
         </section>
         <section class="pb-[7.0625rem] overflow-hidden">
@@ -579,12 +600,17 @@
         </section>
     </main>
 
+
+
     <footer class="font-montserrat py-14 bg-[#251D1A]">
         <span class="block text-center text-[.75rem]">© All rights reserved</span>
     </footer>
-
     <script type="text/javascript" src="src/jquery-3.6.0.min.js"></script>
     <script src="src/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="src/lightgallery.min.js"></script>
+    <script src="src/lg-thumbnail.min.js"></script>
+    <script src="src/lg-zoom.min.js"></script>
+    <script src="src/lg-fullscreen.js"></script>
     <script type="text/javascript" src="src/main.min.js"></script>
 </body>
 

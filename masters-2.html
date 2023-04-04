@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.min.css">
     <link rel="stylesheet" href="src/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="src/lightgallery.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,41 +17,41 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
-        <script>
-            tailwind.config = {
-                theme: {
-                    screens: {
-                        xxl: { max: "1400px" },
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    xxl: { max: "1400px" },
 
-                        xl: { max: "1279px" },
+                    xl: { max: "1279px" },
 
-                        xll: { max: "1070px" },
+                    xll: { max: "1070px" },
 
-                        laptop: { max: "992px" },
+                    laptop: { max: "992px" },
 
-                        lg: { max: "1023px" },
+                    lg: { max: "1023px" },
 
-                        md: { max: "767px" },
+                    md: { max: "767px" },
 
-                        sm: { max: "639px" },
+                    sm: { max: "639px" },
+                },
+                fontFamily: {
+                    "playfair": ["Playfair Display", "sans-serif"],
+                    'montserrat': ['Montserrat', 'sans-serif'],
+                    'firasans': ['Fira sans', 'sans-serif'],
+                },
+                extend: {
+                    color: {
+                        primary: '#3B322D'
                     },
-                    fontFamily: {
-                        "playfair": ["Playfair Display", "sans-serif"],
-                        'montserrat': ['Montserrat', 'sans-serif'],
-                        'firasans': ['Fira sans', 'sans-serif'],
-                    },
-                    extend: {
-                        color: {
-                            primary: '#3B322D'
-                        },
 
-                        fontSize: {
-                            li: "0.9375rem"
-                        },
-                    }
+                    fontSize: {
+                        li: "0.9375rem"
+                    },
                 }
             }
-        </script>
+        }
+    </script>
 </head>
 
 <body class="bg-[#3B322D] text-white">
@@ -122,39 +123,72 @@
             </div>
         </section>
 
-    <section class="pb-5">
-        <div class="wrapper p-0">
-            <div class="flex items-center justify-between bg-[#251D1A] pr-4 laptop:grid laptop:grid-cols-3 sm:text-center">
-                <img src="images/man-6.png" alt="">
-                <span class="block font-bold text-5xl leading-[3.75rem] sm:text-xs">Ronald <br> Richards </span>
-                <p class="text-lg text-[#B7AAA2] sm:text-xs">
-                    Description of the master, his <br> education, achievements and <br> merits
-                </p>
-                <p class="text-lg text-[#B7AAA2] laptop:hidden">
-                    Description of the styles and <br> specializations of the master
-                </p>
+        <section class="pb-5">
+            <div class="wrapper p-0">
+                <div
+                    class="flex items-center justify-between bg-[#251D1A] pr-4 laptop:grid laptop:grid-cols-3 sm:text-center">
+                    <img src="images/man-6.png" alt="">
+                    <span class="block font-bold text-5xl leading-[3.75rem] sm:text-xs">Ronald <br> Richards </span>
+                    <p class="text-lg text-[#B7AAA2] sm:text-xs">
+                        Description of the master, his <br> education, achievements and <br> merits
+                    </p>
+                    <p class="text-lg text-[#B7AAA2] laptop:hidden">
+                        Description of the styles and <br> specializations of the master
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
         <section class="pb-[5.625rem]">
             <div class="wrapper">
-                <div class="grid grid-cols-4 gap-5 mb-8 md:grid-cols-3 sm:grid-cols-2">
-                    <img src="images/cutter-1.png" alt="">
-                    <img src="images/cutter-2.png" alt="">
-                    <img src="images/cutter-3.png" alt="">
-                    <img src="images/cutter-4.png" alt="">
-                    <img src="images/cutter-5.png" alt="">
-                    <img src="images/cutter-6.png" alt="">
-                    <img src="images/cutter-7.png" alt="">
-                    <img src="images/cutter-8.png" alt="">
-                    <img src="images/cutter-9.png" alt="">
-                    <img src="images/cutter-10.png" alt="">
-                    <img src="images/cutter-11.png" alt="">
-                    <img src="images/cutter-12.png" alt="">
-                    <img src="images/cutter-13.png" alt="">
-                    <img src="images/cutter-14.png" alt="">
-                    <img src="images/cutter-15.png" alt="">
-                    <img src="images/cutter-16.png" alt="">
+                <div class="grid grid-cols-4 gap-5 mb-8 md:grid-cols-3 sm:grid-cols-2" id="lightgallery-4">
+                    <a href="images/cutter-1.png">
+                        <img src="images/cutter-1.png" alt="">
+                    </a>
+                    <a href="images/cutter-2.png">
+                        <img src="images/cutter-2.png" alt="">
+                    </a>
+                    <a href="images/cutter-3.png">
+                        <img src="images/cutter-3.png" alt="">
+                    </a>
+                    <a href="images/cutter-4.png">
+                        <img src="images/cutter-4.png" alt="">
+                    </a>
+                    <a href="images/cutter-5.png">
+                        <img src="images/cutter-5.png" alt="">
+                    </a>
+                    <a href="images/cutter-6.png">
+                        <img src="images/cutter-6.png" alt="">
+                    </a>
+                    <a href="images/cutter-7.png">
+                        <img src="images/cutter-7.png" alt="">
+                    </a>
+                    <a href="images/cutter-8.png">
+                        <img src="images/cutter-8.png" alt="">
+                    </a>
+                    <a href="images/cutter-9.png">
+                        <img src="images/cutter-9.png" alt="">
+                    </a>
+                    <a href="images/cutter-10.png">
+                        <img src="images/cutter-10.png" alt="">
+                    </a>
+                    <a href="images/cutter-11.png">
+                        <img src="images/cutter-11.png" alt="">
+                    </a>
+                    <a href="images/cutter-12.png">
+                        <img src="images/cutter-12.png" alt="">
+                    </a>
+                    <a href="images/cutter-13.png">
+                        <img src="images/cutter-13.png" alt="">
+                    </a>
+                    <a href="images/cutter-14.png">
+                        <img src="images/cutter-14.png" alt="">
+                    </a>
+                    <a href="images/cutter-15.png">
+                        <img src="images/cutter-15.png" alt="">
+                    </a>
+                    <a href="images/cutter-16.png">
+                        <img src="images/cutter-16.png" alt="">
+                    </a>
                 </div>
             </div>
         </section>
@@ -166,5 +200,9 @@
 
     <script type="text/javascript" src="src/jquery-3.6.0.min.js"></script>
     <script src="src/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="src/lightgallery.min.js"></script>
+    <script src="src/lg-thumbnail.min.js"></script>
+    <script src="src/lg-zoom.min.js"></script>
+    <script src="src/lg-fullscreen.js"></script>
     <script type="text/javascript" src="src/main.min.js"></script>
 </body>
