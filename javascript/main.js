@@ -3,8 +3,6 @@ $(document).ready(function () {
         arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        variableWidth: true,
-        adaptiveHeight: true,
 
         prevArrow: ".slick-prev",
         nextArrow: ".slick-next",
@@ -30,4 +28,4 @@ lightGallery(document.getElementById("lightgallery"));
 lightGallery(document.getElementById("lightgallery-2")); 
 lightGallery(document.getElementById("lightgallery-3")); 
 lightGallery(document.getElementById("lightgallery-4")); 
-
+ 
