@@ -2,7 +2,8 @@ $(document).ready(function () {
     $(".slider").slick({
         arrows: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 1, 
+        variableWidth: true,
 
         prevArrow: ".slick-prev",
         nextArrow: ".slick-next",
